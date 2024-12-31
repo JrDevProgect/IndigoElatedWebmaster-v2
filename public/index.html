@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Messages 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="title">New Year 2025</h1>
+            <p class="subtitle">Share your messages for the coming year</p>
+            <div id="countdown" class="countdown"></div>
+        </header>
+
+        <main class="main-content">
+            <section class="form-section">
+                <form id="messageForm" class="message-form">
+                    <div class="form-group">
+                        <input type="text" 
+                               id="nicknameInput" 
+                               placeholder="Your name" 
+                               required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="messageInput" 
+                                  placeholder="Write your New Year message..." 
+                                  rows="4" 
+                                  required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                </form>
+            </section>
+
+            <section class="messages-section">
+                <div class="messages-header">
+                    <button onclick="viewMessages()" class="btn btn-secondary">
+                        View Messages
+                    </button>
+                </div>
+                <div id="messageList" class="message-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
